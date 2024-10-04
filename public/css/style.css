@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+nav,
+main,
+footer {
+    margin: 20px;
+    text-align: center; /* Center the text content */
+}
+
+a {
+    color: #00ccff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+/* Center the Navigation Bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #333333;
+}
+
+nav ul li a:hover {
+    background-color: #555555;
+}
+
+/* Centered and Cleaner Form Styles */
+form {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px; /* Increase width for better readability */
+    margin: 20px auto; /* Center the form horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align form elements to the left */
+}
+
+form label {
+    color: #ffcc00;
+    margin-bottom: 5px;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+form input[type='checkbox'] {
+    width: auto;
+    margin-right: 10px;
+}
+
+form button {
+    background-color: #00ccff;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ffcc00;
+    color: #000000;
+}
+
+/* Centered Goal Container */
+.goal-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%; /* Make goal container responsive */
+    max-width: 600px; /* Maximum width to keep things neat */
+    color: #ffffff;
+    text-align: left;
+}
+
+.goal-container h2 {
+    color: #00ccff;
+}
+
+.goal-container p {
+    margin: 5px 0;
+}
+
+/* Center Buttons inside Goal Containers */
+button {
+    background-color: #00ccff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button a {
+    color: #000000;
+}
+
+button:hover {
+    background-color: #ffcc00;
+}
