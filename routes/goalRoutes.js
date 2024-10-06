@@ -1,6 +1,7 @@
 import express from 'express';
 
 import goalControllers from '../controllers/goalControllers.js';
+import verifyToken from '../middleware/verifyToken.js';
 
 const router = express.Router();
 const { getGoals, getGoal, addGoalForm, addGoal, updateGoal, deleteGoal } =
@@ -8,9 +9,9 @@ const { getGoals, getGoal, addGoalForm, addGoal, updateGoal, deleteGoal } =
 
 router.get('/goals', getGoals);
 router.get('/goals/:id', getGoal);
-router.get('/add', addGoalForm);
-router.post('/add', addGoal);
-router.put('/goals/:id', updateGoal);
-router.delete('/goals/:id', deleteGoal);
+router.get('/add', verifyToken, addGoalForm);
+router.post('/add', verifyToken, addGoal);
+router.put('/goals/:id', verifyToken, updateGoal);
+router.delete('/goals/:id', verifyToken, deleteGoal);
 
 export default router;

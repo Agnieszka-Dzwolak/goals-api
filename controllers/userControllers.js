@@ -63,7 +63,7 @@ const userControllers = {
         if (isEmailValid && isPasswordValid && doPasswordsMatch) {
             //hash password
             const hashedPassword = hashPassword(password);
-            console.log(hashedPassword);
+            // console.log(hashedPassword);
 
             //create user
             const newUser = User.add({ email, password: hashedPassword });

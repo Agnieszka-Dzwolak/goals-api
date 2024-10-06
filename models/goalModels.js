@@ -68,7 +68,7 @@ class Goal {
     static remove(id) {
         const goalExist = goals.find((goal) => goal.id === id);
         if (goalExist) {
-            goals = goals.find((goal) => goal.id !== id);
+            goals = goals.filter((goal) => goal.id !== id);
             return true;
         } else {
             return false;
